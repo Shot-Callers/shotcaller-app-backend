@@ -1,24 +1,3 @@
-# README
+# Shot Caller Backend App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3750c7a03a8b0a175a00ab24263df356de54043ebf51d9cebcf05db974b9ec0c5a13546abc3cac9856f59b521ec73c4b2ae003d9414040f1c98c859eec73ab15
