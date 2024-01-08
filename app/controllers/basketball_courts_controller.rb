@@ -3,4 +3,18 @@ class BasketballCourtsController < ApplicationController
         basketball_courts = BasketballCourt.all
         render json: basketball_courts
     end
+
+    def create
+        basketball_court = BasketballCourt.create(basketball_params)
+        if basketball_court.valid?
+            render json: basketball_court
+        else
+            render json: basketball_court.errors, status: 422
+        end
+    end
+    
+    private
+        def basketball_params
+            params.require(:basketball_court).permit(:name, :address, :city, :state, :zip, :court_type, :number_players, :user_id)
+    end
 end
