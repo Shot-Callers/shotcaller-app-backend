@@ -171,4 +171,31 @@ RSpec.describe "BasketballCourts", type: :request do
       expect(basketball_court['number_players']).to include "can't be blank"
     end
   end
+
+  describe "DELETE /destroy" do 
+    it "deletes a basketball court" do 
+      basketball_params = {
+        basketball_court: {
+          name: "Court 1", 
+          address: "123 Happy Street", 
+          city: "City One", 
+          state: "State 1", 
+          zip: 123, 
+          court_type: "outdoor", 
+          number_players: 5, 
+          user_id: user.id
+        }
+      }
+
+      post '/basketball_courts', params: basketball_params
+
+      basketball_court = BasketballCourt.first 
+
+      delete "/basketball_courts/#{basketball_court.id}"
+
+      expect(response).to have_http_status(200)
+      basketball_courts = BasketballCourt.all 
+      expect(basketball_courts).to be_empty
+    end
+  end
 end
