@@ -3,10 +3,6 @@
 
 # Controller
 
-        def index
-            basketball_courts = BasketballCourt.all
-            render json: basketball_courts
-        end
         def create
             basketball_court = BasketballCourt.create(basketball_params)
             if basketball_court.valid?
