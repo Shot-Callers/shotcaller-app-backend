@@ -1,2 +1,3 @@
 class BasketballCourtsController < ApplicationController
+
 end

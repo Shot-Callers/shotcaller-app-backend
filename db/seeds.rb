@@ -1,5 +1,5 @@
-user1 = User.where(email: "test1@example.com").first_or_create(password: "password", password_confirmation: "password", skill_level: "beginner")
-user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password", skill_level: "advanced")
+user1 = User.where(email: "test1@example.com").first_or_create(password: "password", password_confirmation: "password", skill_level: 1)
+user2 = User.where(email: "test2@example.com").first_or_create(password: "password", password_confirmation: "password", skill_level: 3)
 
 user1_basketball_courts = [
     {name: "Court 1", address: "123 Happy Street", city: "City One", state: "State 1", zip: 12345, court_type: "indoor", number_players: 5},
