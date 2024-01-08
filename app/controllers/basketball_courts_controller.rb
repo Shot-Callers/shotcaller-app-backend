@@ -22,6 +22,14 @@ class BasketballCourtsController < ApplicationController
                 render json: basketball_court.errors, status: 422
         end
     end
+    def destroy
+        basketball_court = BasketballCourt.find(params[:id])
+        if basketball_court.destroy
+            render json: basketball_court
+        else
+            render json: basketball_court.errors, status: 422
+        end
+    end
     
     private
         def basketball_params
