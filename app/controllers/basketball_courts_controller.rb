@@ -13,6 +13,16 @@ class BasketballCourtsController < ApplicationController
         end
     end
     
+    def update
+        basketball_court = BasketballCourt.find(params[:id])
+        basketball_court.update(basketball_params)
+            if basketball_court.valid?
+                render json: basketball_court
+            else
+                render json: basketball_court.errors, status: 422
+        end
+    end
+    
     private
         def basketball_params
             params.require(:basketball_court).permit(:name, :address, :city, :state, :zip, :court_type, :number_players, :user_id)
