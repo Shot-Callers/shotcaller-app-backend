@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
-   url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
   database: shotcaller_app_backend_production
   username: shotcaller_app_backend
   password: <%= ENV["SHOTCALLER_APP_BACKEND_DATABASE_PASSWORD"] %>
