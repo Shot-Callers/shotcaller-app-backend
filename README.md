@@ -17,18 +17,18 @@ The ShotCallers backend is not just a server; it's the backbone of our vision br
 2. **Scalability:** Our backend is designed to scale, accommodating a growing community of basketball enthusiasts without compromising performance.
 3. **Real-Time Updates:** With Ruby at the core, ShotCallers backend ensures real-time updates, fostering a dynamic and engaging environment for users.
 
-## Running the Backend:
-To get the ShotCallers backend up and running, follow these steps:
+## Running the Backend with Ruby on Rails:
+To get the ShotCallers backend up and running using Ruby on Rails, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/ShotCallers/ShotCallers-Backend.git`
 2. Navigate to the backend directory: `cd ShotCallers-Backend`
 3. Install Ruby dependencies: `bundle install`
-4. Run the backend server: `rails server` 
+4. Run the backend server with Rails: `rails server` 
 5. Access the backend at `http://localhost:3000`.
 
-## Ruby Dependency:
-The ShotCallers backend relies on Ruby, a powerful and versatile programming language. Ensure you have Ruby installed on your system.
+## Ruby on Rails Dependency:
+The ShotCallers backend relies on Ruby on Rails, a powerful and versatile web application framework built on Ruby. Ensure you have both Ruby and Rails installed on your system.
 
-Join us on this exciting journey as we redefine the game, connecting like-minded individuals who share a passion for basketball. The ShotCallers backend, powered by Ruby, is a key component in delivering an elevated basketball experience. Thank you for being a part of our journey!
+Join us on this exciting journey as we redefine the game, connecting like-minded individuals who share a passion for basketball. The ShotCallers backend, powered by Ruby on Rails, is a key component in delivering an elevated basketball experience. Thank you for being a part of our journey!
 
 *Team Shot Callers*
