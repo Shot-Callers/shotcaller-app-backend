@@ -7,4 +7,4 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
       max_age: 600
     end
-  endz
+  end
